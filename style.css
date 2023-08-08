@@ -1,0 +1,46 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+}
+.header-wrapper{
+    background-color: black;
+    max-width:100%;
+
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    max-width:1024px;
+    padding:15px;
+    margin:0 auto;
+}
+.menu{
+    display:flex;
+    gap:1rem;
+    list-style:none;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    border-left: 1px solid grey;
+    padding:17px 16px;
+}
+.hero-wrapper{
+    background-color:rgb(71, 188, 235);
+    max-width:100%;
+}
+.hero{
+    display:flex;
+    max-width:1024px;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:15px;
+}
