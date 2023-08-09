@@ -9,6 +9,8 @@ html{
 }
 body{
     font-size: 1.6rem;
+    width:100%;
+    height:100%;
 }
 .header-wrapper{
     background-color: black;
@@ -36,6 +38,7 @@ body{
 .hero-wrapper{
     background-color:rgb(71, 188, 235);
     max-width:100%;
+
 }
 .hero{
     display:flex;
@@ -43,4 +46,180 @@ body{
     justify-content: space-between;
     margin:0 auto;
     padding:15px;
+  
+}
+h1{
+    margin-top: 30px;
+    font-size: 40px;
+}
+.hero-paragraph{
+    margin-bottom: 40px;
+    font-size: 21px;
+}
+.hero-text a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.primary-btn{
+    background-color:rgb(107, 148, 165);
+    padding:15px 16px;
+    margin-right:15px;
+}
+.hero img{
+    margin-bottom: -50px;
+}
+
+/*the main part*/
+.main-wrapper{
+    display:flex;
+    max-width:1024px;
+    margin:0 auto;
+    margin-top: 100px;
+    padding:15px;
+}
+.main-top-text h2{
+    margin-bottom: 10px;
+}
+.main-top-text p{
+    max-width:700px;
+}
+.puppy-img-description{
+    display:flex;
+    margin-top:50px;
+    gap:25px;
+}
+.left-content,.middle-content,.right-content{
+    width:25%;
+}
+.side-content{
+  color:white;
+  border:1px solid black;
+  align-self: flex-start;
+  padding:45px 25px;
+  background-color: rgb(70, 67, 67);
+  margin-left: -150px;
+
+}
+.side-content p.side-content-text,.date{
+    margin-bottom: 35px;
+}
+.side-content h4{
+    margin-bottom: 5px;
+}
+.side-content >img{
+    border-radius: 50%;
+}
+
+/*the start of the footer*/
+
+.footer-wrapper{
+    max-width:100%;
+    background-color:lightgray;
+    margin-top: 100px;
+}
+.footer{
+    margin:0 auto;
+    max-width:1024px;
+    padding:35px 0 35px 0;
+}
+.footer p{
+    display:inline-block;
+    font-size: 25px;
+    margin-right: 25px;
+}
+input{
+    padding:10px 18px;
+    max-width:335px;
+}
+.footer a{
+    border:1px solid blue;
+    padding:8px 15px;
+    text-decoration: none;
+    color:white;
+    background-color:rgb(15, 89, 113);
+    
+}
+
+
+/*the responsive design below*/
+
+@media(max-width:1009px){
+    .footer{
+        margin-left:20px;
+    }
+    .footer p{
+       display:block;
+       margin-bottom:15px;
+    }
+    
+}
+@media(max-width:942px){
+    .main-wrapper{
+    
+        flex-direction: column;
+    }
+    .side-content{
+        margin:0;
+        margin-top: 25px;
+    }
+    .footer-wrapper{
+        margin:0;
+    }
+}
+@media(max-width:822px){
+    .puppy-img-description{
+        flex-direction: column;
+        width:100%;
+ }
+    .left-content,.right-content,.middle-content{
+        width: 75%;
+    }
+    .left-content,.middle-content,.right-content{
+        
+        margin:0 auto;
+    }
+    .left-content img{
+        border:3px solid red;
+        padding-left: 30%;
+    }
+    .try{
+        border:3px solid brown;
+        
+    }
+   
+    
+    .left-content h4,.middle-content h4,.right-content h4{
+       text-align: center;
+    }
+   
+   
+
+}
+@media(max-width:789px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero img{
+        margin-top: 100px;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    
+}
+@media(max-width:441px){
+    .footer input{
+        display:block;
+        margin-bottom: 15px;
+        text-align: center;
+     }
+     .footer a{
+        margin:0;
+        text-align: center;
+     }
+     .primary-btn{
+        display:block;
+        margin-bottom: 20px;
+     }
 }
